@@ -1,0 +1,189 @@
+.footer {
+  display: flex;
+  background-color: rgba($color: #212730, $alpha: 1);
+  height: 85vh;
+  font-family: "Nunito", sans-serif;
+
+  &__col_1 {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+
+    .f_logo {
+      width: 27rem;
+      height: 27rem;
+      opacity: 0.5;
+      margin-left: 20rem;
+      margin-top: 17rem;
+    }
+
+    .f_name {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      position: relative;
+      opacity: 0.8;
+      padding-left: 5rem;
+      padding-top: 12.5rem;
+
+      .f_row_1 {
+        font-size: 3rem;
+        padding-left: 13rem;
+        padding-top: 2rem;
+      }
+
+      .f_and {
+        position: absolute;
+        font-family: "Marck Script", cursive;
+        font-size: 25rem;
+        left: 39.5rem;
+        top: 8.2rem;
+        opacity: 0.2;
+        padding-left: 5rem;
+      }
+
+      .f_row_2 {
+        font-size: 3rem;
+        padding-left: 13rem;
+        padding-top: 3rem;
+      }
+
+      .f_row_3 {
+        font-family: "Pacifico", cursive;
+        font-size: 3.8rem;
+        padding-left: 20rem;
+        padding-top: 2.5rem;
+      }
+    }
+  }
+
+  &__col_2 {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    position: relative;
+
+    .f_links {
+      display: flex;
+      /* color: white; */
+      flex-direction: column;
+      opacity: 0.8;
+
+      .implinks {
+        font-size: 3rem;
+        left: 30rem;
+        top: 18rem;
+        color: rgba($color: #d3d3d3, $alpha: 1);
+        position: absolute;
+      }
+
+      .l_links {
+        font-size: 2rem;
+        left: 34rem;
+        top: 23rem;
+        text-align: center;
+        /* color: rgba($color: #c7c7c7, $alpha: 0.5); */
+        position: absolute;
+
+        .links {
+          padding-top: 1rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgba($color: #c7c7c7, $alpha: 0.5);
+        }
+
+        .links:hover > a {
+          color: rgba($color: #c7c7c7, $alpha: 0.8);
+          transition: all 400ms ease;
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+          display: block;
+        }
+      }
+    }
+
+    .f_address {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      font-size: 1.8rem;
+      top: 65rem;
+      left: 28rem;
+      line-height: 2.5rem;
+      font-weight: 900;
+      /* opacity: 0.5; */
+      a {
+        text-decoration: none;
+        color: rgba($color: #c7c7c7, $alpha: 0.5);
+      }
+
+      .address:hover > a {
+        color: rgba($color: #c7c7c7, $alpha: 0.8);
+        transition: all 400ms ease;
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        display: block;
+      }
+    }
+  }
+
+  &__col_3 {
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    position: relative;
+
+    .weather {
+      .weather-icon {
+        i {
+          width: 7rem;
+          height: 7rem;
+        }
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 65rem;
+      left: 25rem;
+      align-items: center;
+      font-size: 1.5rem;
+
+      color: rgba($color: #c7c7c7, $alpha: 0.5);
+      .f_pno {
+        display: flex;
+        img {
+          height: 2rem;
+          width: 2rem;
+          opacity: 0.5;
+        }
+        .pno {
+          margin-left: 2rem;
+          margin-top: 0.2rem;
+        }
+      }
+
+      .f_emailid {
+        display: flex;
+        margin-top: 1rem;
+
+        img {
+          height: 2rem;
+          width: 2rem;
+          opacity: 0.5;
+          margin-left: -5.6rem;
+        }
+
+        .emailid {
+          margin-left: 5.3rem;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+}

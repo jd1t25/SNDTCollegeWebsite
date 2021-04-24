@@ -1,0 +1,95 @@
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+
+    &_img{
+        width: 100%;
+        height: 25rem;
+        background-image: url('/images/1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(3, 3, 3, 0.90);
+        background-blend-mode: multiply;
+        color: white;
+        line-height: 98.3rem;
+        text-align: center;
+        font-size: 3rem;
+        background-attachment: fixed;
+        position: absolute;
+
+    }
+
+    .students{
+        z-index: 2;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        &_n{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+
+        &_line{
+            width: 12.5rem;
+            height: 7rem;
+            transform: rotate(45deg);
+        }
+        &_t{
+            padding-left: 1rem;
+            font-size: 2rem;
+            font-weight: 50;
+        }
+    }
+    
+    .faculty{
+        z-index: 2;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        &_n{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+
+        &_line{
+            width: 11rem;
+            height: 7rem;
+            transform: rotate(45deg);
+        }
+        &_t{
+            padding-left: 1rem;
+            font-size: 2rem;
+            font-weight: 50;
+        }
+    }
+
+    .staff{
+        z-index: 2;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        &_n{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+
+        &_line{
+            width: 9rem;
+            height: 7rem;
+            transform: rotate(45deg);
+        }
+        &_t{
+            padding-left: 1rem;
+            font-size: 2rem;
+            font-weight: 50;
+        }
+    }
+}
