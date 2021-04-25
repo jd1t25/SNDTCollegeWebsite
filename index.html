@@ -140,10 +140,14 @@
       </div>
     </div>
 
-    <!-- <div class="box1">Box 1</div>
-    <div class="box2">Box 2</div>
-    <div class="box3">Box 3</div>
-    <div class="box4">Box 4</div> -->
+    <!-----------------------Boxes------------------------------>
+
+    <div class="box__div">
+      <div class="box__1"></div>
+      <div class="box__2"></div>
+      <div class="box__3"></div>
+      <div class="box__4"></div>
+    </div>
 
     <!-----------------------News & Announcement Wrapper------------------------------>
 
@@ -342,7 +346,61 @@
           </div>
           <div class="a-container">
             <div class="a-sub">
-              <div class="a-list">
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <div class="a-body">
+                <p class="date">
+                  March 24th, 2021 <span class="new">NEW!</span>
+                </p>
+                <p class="notice">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur volutpat.
+                </p>
+              </div>
+              <!-- <div class="a-list">
                 <p>Fuck u Ankit</p>
               </div>
               <div class="a-list">
@@ -350,7 +408,7 @@
               </div>
               <div class="a-list">
                 <p>Fuck u Mayruesh</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -661,7 +719,7 @@
               }
             </style>
           </defs>
-          <title>Untitled-3</title>
+          <title></title>
           <path
             class="cls-1"
             d="M1179,0s-89,202,0,425,0,425,0,425h158V0Z"
@@ -671,21 +729,115 @@
       </div>
 
       <!-----------------------Gallery-------------------------->
-
-      <div class="gallery">
-        <div class="gallery_group">
-          <p class="gallery_name">Gallery</p>
-          <img class="gallery_icon" src="/images/gallery.svg" />
+      <div class="gallery-container">
+        <div class="gallery">
+          <div class="gallery_group">
+            <p class="gallery_name">Gallery</p>
+            <img class="gallery_icon" src="/images/gallery.svg" />
+          </div>
+          <div class="gallery_grid">
+            <div class="gallery_1">
+              <img class="hover-shadow" src="/images/gallery_1.JPG" />
+            </div>
+            <div class="gallery_2">
+              <img class="hover-shadow" src="/images/gallery_2.JPG" />
+            </div>
+            <div class="gallery_3">
+              <img class="hover-shadow" src="/images/gallery_3.JPG" />
+            </div>
+            <div class="gallery_4">
+              <img class="hover-shadow" src="/images/gallery_4.JPG" />
+            </div>
+            <div class="gallery_5">
+              <img class="hover-shadow" src="/images/gallery_5.JPG" />
+            </div>
+            <div class="gallery_6">
+              <img class="hover-shadow" src="/images/gallery_6.JPG" />
+            </div>
+          </div>
         </div>
-        <div class="gallery_grid">
-          <div class="gallery_1"><img src="/images/gallery_1.JPG" /></div>
-          <div class="gallery_2"><img src="/images/gallery_2.JPG" /></div>
-          <div class="gallery_3"><img src="/images/gallery_3.JPG" /></div>
-          <div class="gallery_4"><img src="/images/gallery_4.JPG" /></div>
-          <div class="gallery_5"><img src="/images/gallery_5.JPG" /></div>
-          <div class="gallery_6"><img src="/images/gallery_6.JPG" /></div>
+
+        <!-- The Modal/Lightbox -->
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal no-select">
+          <span class="close cursor">&times;</span>
+          <!-- Next/previous controls -->
+          <a class="prev no-select">&#10094;</a>
+          <a class="next no-select">&#10095;</a>
+          <div class="modal-content">
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_1.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_2.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_3.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_4.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_5.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/gallery_6.JPG" />
+            </div>
+
+            <div class="my-slides">
+              <div class="my-slides--number"></div>
+              <img src="/images/1.jpg" />
+            </div>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column-box">
+              <div class="column">
+                <img class="demo" src="/images/gallery_1.JPG" alt="Nature" />
+              </div>
+
+              <div class="column">
+                <img class="demo" src="/images/gallery_2.jpg" alt="Snow" />
+              </div>
+
+              <div class="column">
+                <img class="demo" src="/images/gallery_3.JPG" alt="Mountains" />
+              </div>
+
+              <div class="column">
+                <img class="demo" src="/images/gallery_4.JPG" alt="Lights" />
+              </div>
+
+              <div class="column">
+                <img class="demo" src="/images/gallery_5.JPG" alt="Mountains" />
+              </div>
+              <div class="column">
+                <img class="demo" src="/images/gallery_6.JPG" alt="Lights" />
+              </div>
+
+              <div class="column">
+                <img class="demo" src="/images/1.jpg" alt="Mountains" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Faq-Gallery Parent -->
     </div>
 
     <!-----------------------Footer-------------------------->
