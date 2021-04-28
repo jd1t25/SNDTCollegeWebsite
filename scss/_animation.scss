@@ -124,3 +124,118 @@
     transform: scale(1);
   }
 }
+
+// FadeIn Navbar Academics
+
+@-webkit-keyframes fade-academics {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 30em;
+  }
+}
+@keyframes fade-academics {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 30em;
+  }
+}
+
+// Admission
+
+@keyframes fade-admission {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 20em;
+  }
+}
+
+//Students
+
+@keyframes fade-students {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 35em;
+  }
+}
+
+//Faculty
+
+@keyframes fade-faculty {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 26em;
+  }
+}
+
+//Alumni
+
+@keyframes fade-alumni {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 12.6em;
+  }
+}
+
+//Exam
+
+@keyframes fade-exam {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 17em;
+  }
+}
+
+//About
+
+@keyframes fade-menu {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  /* 50% {
+  } */
+  100% {
+    opacity: 1;
+    height: 8.5em;
+  }
+}

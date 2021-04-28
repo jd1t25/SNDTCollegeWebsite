@@ -87,38 +87,41 @@
         </svg>
       </div>
     </div>
-
-    <div class="slider">
-      <div class="slider__items">
-        <div class="item active" id="slide1">Slide 1</div>
-        <div class="item" id="slide2">
-          <p>Slide 2</p>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slider__items">
+          <div class="item active" id="slide1">Slide 1</div>
+          <div class="item" id="slide2">
+            <p>Slide 2</p>
+          </div>
+          <div class="item" id="slide3">
+            <p>Slide 3</p>
+          </div>
         </div>
-        <div class="item" id="slide3">
-          <p>Slide 3</p>
-        </div>
+        <!-- slider controls -->
+        <div class="left-slide"><</div>
+        <div class="right-slide">></div>
       </div>
-      <!-- slider controls -->
-      <div class="left-slide"><</div>
-      <div class="right-slide">></div>
     </div>
-    <div class="header">
-      <div class="header__search">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: rgb(255, 255, 255); --darkreader-inline-fill: #e8e6e3"
-          data-darkreader-inline-fill=""
-        >
-          <path
-            d="M9,16c1.763,0,3.37-0.66,4.603-1.739l1.337,2.8c0,0,0.275,0.224,0.653,0.596c0.387,0.363,0.896,0.854,1.384,1.367 c0.494,0.506,0.988,1.012,1.358,1.392c0.362,0.388,0.604,0.646,0.604,0.646l2.121-2.121c0,0-0.258-0.242-0.646-0.604 c-0.38-0.37-0.886-0.864-1.392-1.358c-0.513-0.488-1.004-0.997-1.367-1.384c-0.372-0.378-0.596-0.653-0.596-0.653l-2.8-1.337 C15.34,12.37,16,10.763,16,9c0-3.859-3.141-7-7-7S2,5.141,2,9S5.141,16,9,16z"
-          ></path>
-        </svg>
-      </div>
-      <div class="header__logo">
-        <img src="/images/SNDT-LOGO-blue-300dp-2016.svg" />
+    <div class="header-container">
+      <div class="header">
+        <!--  <div class="header__search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgb(255, 255, 255); --darkreader-inline-fill: #e8e6e3"
+            data-darkreader-inline-fill=""
+          >
+            <path
+              d="M9,16c1.763,0,3.37-0.66,4.603-1.739l1.337,2.8c0,0,0.275,0.224,0.653,0.596c0.387,0.363,0.896,0.854,1.384,1.367 c0.494,0.506,0.988,1.012,1.358,1.392c0.362,0.388,0.604,0.646,0.604,0.646l2.121-2.121c0,0-0.258-0.242-0.646-0.604 c-0.38-0.37-0.886-0.864-1.392-1.358c-0.513-0.488-1.004-0.997-1.367-1.384c-0.372-0.378-0.596-0.653-0.596-0.653l-2.8-1.337 C15.34,12.37,16,10.763,16,9c0-3.859-3.141-7-7-7S2,5.141,2,9S5.141,16,9,16z"
+            ></path>
+          </svg>
+        </div> -->
+        <div class="header__logo">
+          <img src="/images/SNDT-LOGO-blue-300dp-2016.svg" />
+        </div>
         <div class="title">
           <p class="item-1">
             SNDT COLLEGE OF ARTS & SCB COLLEGE OF COMMERCE AND SCIENCE FOR WOMEN
@@ -132,16 +135,145 @@
             महिलांसाठी वाणिज्य व विज्ञान महाविद्यालयीन कला व एससीबी कॉलेज पाठवा
           </p>
         </div>
-      </div>
-      <div id="btnHam" class="header__hammenu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div id="btnHam" class="header__hammenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
 
-    <!-----------------------Boxes------------------------------>
+    <div class="nav-container">
+      <ul class="mainlink">
+        <li class="nav-links home-link">
+          <div class="home">
+            <img src="/images/home.svg" />
+          </div>
+        </li>
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Academics</a>
+          </div>
+          <ul class="sub-menu academics-menu">
+            <li><a href="#">B.A</a></li>
+            <li><a href="#">B.Com</a></li>
+            <li><a href="#">B.Sc.IT</a></li>
+            <li><a href="#">B.M.S</a></li>
+            <li><a href="#">B.V.A</a></li>
+            <li><a href="#">Jr. Clg</a></li>
+            <li><a href="#">Certificate Courses</a></li>
+          </ul>
+        </li>
 
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Admission</a>
+          </div>
+          <ul class="sub-menu admission-menu">
+            <li><a href="#">B.A</a></li>
+            <li><a href="#">B.Com</a></li>
+            <li><a href="#">Jr. Clg</a></li>
+            <li><a href="#">Course Wise</a></li>
+            <li><a href="#">Scolarship/Freeship</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Students</a>
+          </div>
+          <ul class="full-nav students-menu">
+            <div class="row">
+              <div class="column">
+                <li><a href="#">College Timings</a></li>
+                <li><a href="#">Placement Cell </a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Gymkhana</a></li>
+                <li><a href="#">Fitness Center</a></li>
+              </div>
+              <div class="column">
+                <li><a href="#">Counseling Center </a></li>
+                <li><a href="#">College Magazine </a></li>
+                <li><a href="#">University Canteen </a></li>
+                <li><a href="#">Computer Centers </a></li>
+                <li><a href="#">Hostel</a></li>
+                <li><a href="#">Patkar Hall </a></li>
+              </div>
+              <div class="column">
+                <li>
+                  <a href="#" style="padding-left: 30px; padding-top: 8px"
+                    >Premlila Thackersey <br />
+                    Committee Room</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="padding-left: 30px; padding-top: 8px"
+                    >Student's and staff's <br />Common Room
+                  </a>
+                </li>
+                <li><a href="#">Grievance Redressal Cell </a></li>
+                <li><a href="#">The Research Cell</a></li>
+                <li><a href="#">Anti-Sexual Harassment Cell</a></li>
+                <li><a href="#">Special Cell</a></li>
+              </div>
+              <div class="column">
+                <li><a href="#">Anti Ragging Cell </a></li>
+                <li><a href="#">Student's Common Room </a></li>
+                <li><a href="#">Departmental Libraries</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Faculty</a>
+          </div>
+          <ul class="sub-menu faculty-menu">
+            <li><a href="#">Administration and Services</a></li>
+            <li><a href="#">List of Non Teaching Staff</a></li>
+            <li><a href="#">General Rules & Regulations</a></li>
+            <li><a href="#">Department Library</a></li>
+            <li><a href="#">Employment</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Alumni</a>
+          </div>
+          <ul class="sub-menu alumni-menu">
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Notable Alumni</a></li>
+            <li><a href="#">Alumni Form</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">Examination</a>
+          </div>
+          <ul class="sub-menu exam-menu">
+            <li><a href="#">Examination Time Table</a></li>
+            <li><a href="#">Rules & Regulations</a></li>
+            <li><a href="#">Result</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-links">
+          <div class="nav-title">
+            <a href="#">About Us</a>
+          </div>
+          <ul class="sub-menu about-menu">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-----------------------Boxes------------------------------>
+    <div class="blank-container"></div>
     <div class="box__div">
       <div class="box__1"></div>
       <div class="box__2"></div>

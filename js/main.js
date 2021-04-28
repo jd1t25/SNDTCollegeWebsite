@@ -239,3 +239,25 @@ function showAndClose() {
     gnext.style.display = "block";
   }
 }
+
+// Navbar
+
+$(document).ready(function () {
+  var stickyNavTop = 302;
+
+  var stickyNav = function () {
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop > stickyNavTop) {
+      $(".nav-container").addClass("sticky");
+    } else {
+      $(".nav-container").removeClass("sticky");
+    }
+  };
+
+  stickyNav();
+
+  $(window).scroll(function () {
+    stickyNav();
+  });
+});
