@@ -54,6 +54,10 @@
         grid-column: 3/5;
       }
     }
+
+    .gallery-mobile {
+      display: none;
+    }
   }
 
   img.hover-shadow {
@@ -268,6 +272,61 @@
     .prev:hover,
     .next:hover {
       background-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-container {
+    width: auto;
+    .gallery {
+      margin-top: 5rem;
+      .gallery_group {
+        margin-top: 0px;
+        margin-left: 0px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        font-family: "Nunito", sans-serif;
+        display: flex;
+        margin-left: 1rem;
+
+        .gallery_name {
+          font-size: 8rem;
+          font-weight: 600;
+          opacity: 0.2;
+        }
+        .gallery_icon {
+          width: 50px;
+          height: 50px;
+          opacity: 0.2;
+          margin-left: 5px;
+          margin-top: -10px;
+        }
+      }
+      .gallery_grid {
+        display: none;
+      }
+      .gallery-mobile {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        img {
+          width: 100%;
+          height: 20%;
+        }
+        .b-mobile {
+          width: 25%;
+          height: 30px;
+          background-color: var(--pri-color);
+          color: white;
+          font-size: 1.5rem;
+          border: none;
+          border-radius: 15px;
+          margin-left: 12rem;
+          margin-top: 2rem;
+          outline: none;
+        }
+      }
     }
   }
 }

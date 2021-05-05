@@ -1,4 +1,4 @@
-var slides = document.querySelector(".slider__items").children;
+var slides = document.querySelector(".items").children;
 var nextSlide = document.querySelector(".right-slide");
 var prevSlide = document.querySelector(".left-slide");
 var totalSlides = slides.length;
@@ -31,30 +31,132 @@ function next(direction) {
   slides[index].classList.add("active");
 }
 
-// Btn Ham
+//===================Sticky Navbar=======================
+
+$(document).ready(function () {
+  var stickyNavTop = 302;
+
+  var stickyNav = function () {
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop > stickyNavTop) {
+      $(".nav-container").addClass("sticky");
+    } else {
+      $(".nav-container").removeClass("sticky");
+    }
+  };
+
+  stickyNav();
+
+  $(window).scroll(function () {
+    stickyNav();
+  });
+});
+
+//===================Ham Nav=======================
 
 const btnHamburger = document.querySelector("#btnHam");
-const header = document.querySelector(".header__hammenu");
+const header = document.querySelector(".hammenu");
+var mainlink = document.querySelector(".mainlink");
 
 btnHamburger.addEventListener("click", function () {
   console.log("click hamburger");
 
   if (header.classList.contains("open")) {
-    // Close Hamburger Menu
-    /* body.classList.remove('noscroll'); */
     header.classList.remove("open");
-    /* fadeElems.forEach(function(element){
-         element.classList.remove('fade-in');
-         element.classList.add('fade-out');
-       }); */
+    mainlink.classList.remove("d-block");
+    mainlink.classList.add("open1");
   } else {
-    // Open Hamburger Menu
-    /*  body.classList.add('noscroll'); */
     header.classList.add("open");
-    /* fadeElems.forEach(function(element){
-         element.classList.remove('fade-out');
-         element.classList.add('fade-in');
-       }); */
+    mainlink.classList.add("d-block");
+    mainlink.classList.remove("open1");
+  }
+});
+
+//===================Responsive Nav=======================
+
+var drp_ac = document.querySelector("#drp-ac");
+var drp_ad = document.querySelector("#drp-ad");
+var drp_st = document.querySelector("#drp-st");
+var drp_fa = document.querySelector("#drp-fa");
+var drp_al = document.querySelector("#drp-al");
+var drp_ex = document.querySelector("#drp-ex");
+var drp_ab = document.querySelector("#drp-ab");
+
+var ac_submenu = document.querySelector(".academics-menu");
+var ad_submenu = document.querySelector(".admission-menu");
+var st_submenu = document.querySelector(".students-menu");
+var fa_submenu = document.querySelector(".faculty-menu");
+var al_submenu = document.querySelector(".alumni-menu");
+var ex_submenu = document.querySelector(".exam-menu");
+var ab_submenu = document.querySelector(".about-menu");
+
+drp_ac.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (ac_submenu.classList.contains("drp")) {
+    ac_submenu.classList.remove("drp");
+  } else {
+    ac_submenu.classList.add("drp");
+  }
+});
+
+drp_ad.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (ad_submenu.classList.contains("drp")) {
+    ad_submenu.classList.remove("drp");
+  } else {
+    ad_submenu.classList.add("drp");
+  }
+});
+
+drp_st.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (st_submenu.classList.contains("drp")) {
+    st_submenu.classList.remove("drp");
+  } else {
+    st_submenu.classList.add("drp");
+  }
+});
+
+drp_fa.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (fa_submenu.classList.contains("drp")) {
+    fa_submenu.classList.remove("drp");
+  } else {
+    fa_submenu.classList.add("drp");
+  }
+});
+
+drp_al.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (al_submenu.classList.contains("drp")) {
+    al_submenu.classList.remove("drp");
+  } else {
+    al_submenu.classList.add("drp");
+  }
+});
+
+drp_ex.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (ex_submenu.classList.contains("drp")) {
+    ex_submenu.classList.remove("drp");
+  } else {
+    ex_submenu.classList.add("drp");
+  }
+});
+drp_ab.addEventListener("click", function () {
+  console.log("submenuuu ___ acc");
+
+  if (ab_submenu.classList.contains("drp")) {
+    ab_submenu.classList.remove("drp");
+  } else {
+    ab_submenu.classList.add("drp");
   }
 });
 
@@ -62,7 +164,7 @@ btnHamburger.addEventListener("click", function () {
 
 $(document).ready(function () {
   $("#news-slider").owlCarousel({
-    items: 2,
+    items: 3,
     navigation: true,
     navigationText: ["", ""],
     autoPlay: true,
@@ -239,25 +341,3 @@ function showAndClose() {
     gnext.style.display = "block";
   }
 }
-
-// Navbar
-
-$(document).ready(function () {
-  var stickyNavTop = 302;
-
-  var stickyNav = function () {
-    var scrollTop = $(window).scrollTop();
-
-    if (scrollTop > stickyNavTop) {
-      $(".nav-container").addClass("sticky");
-    } else {
-      $(".nav-container").removeClass("sticky");
-    }
-  };
-
-  stickyNav();
-
-  $(window).scroll(function () {
-    stickyNav();
-  });
-});

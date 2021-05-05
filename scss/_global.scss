@@ -6,14 +6,24 @@
   box-sizing: border-box;
 }
 
+/* 1em,rem=10px */
 html {
   font-size: 62.5%;
-} /* =10px */
-
-svg {
-  fill: white;
 }
 
-svg:hover {
-  fill: blue;
+body {
+  color: #222;
+  background: red;
+}
+a {
+  color: #0033cc;
+}
+
+/* Dark Mode styles */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme a {
+  color: #809fff;
 }
